@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MidTermProjectITE434.DirectionPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Direction Kanji">
+    <StackLayout BackgroundColor="#E5EDF5" Spacing="0">
+        <BoxView BackgroundColor="#101E2D" HeightRequest="50" />
+        <AbsoluteLayout>
+            <BoxView
+                AbsoluteLayout.LayoutBounds="0 ,0,500,150"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#101E2D" />
+            <BoxView
+                AbsoluteLayout.LayoutBounds="0.5, 1,280,280"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#E5EDF5"
+                CornerRadius="10"
+                HeightRequest="280"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                WidthRequest="280" />
+            <Button
+                x:Name="kanjiCard"
+                AbsoluteLayout.LayoutBounds="0.5, 1,280,280"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#3C6AA0"
+                CornerRadius="10"
+                FontSize="124"
+                HeightRequest="280"
+                HorizontalOptions="CenterAndExpand"
+                Style="{StaticResource TsunagiGothic}"
+                TextColor="#E5EDF5"
+                VerticalOptions="Center"
+                WidthRequest="280" />
+        </AbsoluteLayout>
+        <Button
+            x:Name="nextBtn"
+            Margin="20"
+            BackgroundColor="#203955"
+            CornerRadius="10"
+            FontSize="Default"
+            HorizontalOptions="CenterAndExpand"
+            Style="{StaticResource TsunagiGothic}"
+            Text="Next"
+            TextColor="#E5EDF5"
+            VerticalOptions="Center"
+            WidthRequest="280" />
+        <Button
+            x:Name="resetBtn"
+            BackgroundColor="#769ECB"
+            CornerRadius="10"
+            FontSize="Default"
+            HorizontalOptions="CenterAndExpand"
+            Style="{StaticResource TsunagiGothic}"
+            Text="RESET"
+            TextColor="#203955"
+            VerticalOptions="Center"
+            WidthRequest="280" />
+        <Label
+            x:Name="onTxt"
+            Padding="20"
+            HorizontalTextAlignment="Center"
+            Style="{StaticResource TsunagiGothic}"
+            TextColor="#203955" />
+        <Label
+            x:Name="kunTxt"
+            Padding="20,0,20,20"
+            HorizontalTextAlignment="Center"
+            Style="{StaticResource TsunagiGothic}"
+            TextColor="#203955" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MidTermProjectITE434.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Home">
+    <Grid BackgroundColor="#E5EDF5" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            Grid.Row="0"
+            Padding="20"
+            BackgroundColor="#E5EDF5"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Label
+                Margin="20,0,20,20"
+                FontSize="48"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                Text="JLPT N5 Kanji Card Game"
+                TextColor="#101E2D" />
+            <Label
+                Margin="20,0,20,20"
+                FontSize="Body"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                Text="        นี่คือแอพพลิเคชันสำหรับฝึกฝนและช่วยจำตัวอักษรคันจิในระดับ JLPT N5 ประกอบไปด้วยตัวอักษรคันจิจำนวน 105 ตัวอักษร แบ่งเป็น 9 หมวดหมู่"
+                TextColor="#101E2D" />
+            <Label
+                Margin="20,0,20,10"
+                FontSize="Body"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                Text="เลือกประเภทแบบสุ่ม"
+                TextColor="#101E2D" />
+            <Button
+                x:Name="randStrtBtn"
+                Margin="20,0,20,0"
+                BackgroundColor="Transparent"
+                BorderColor="#101E2D"
+                BorderWidth="1"
+                CornerRadius="5"
+                Text="Random category start"
+                TextColor="#101E2D" />
+        </StackLayout>
+        <AbsoluteLayout Grid.Row="1">
+            <BoxView
+                AbsoluteLayout.LayoutBounds="0.5, 1, 400,150"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#101E2D" />
+            <Image
+                AbsoluteLayout.LayoutBounds="0.5, 1.2,320,320"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                HeightRequest="130"
+                Source="studynightboy" />
+        </AbsoluteLayout>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="MidTermProjectITE434.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+
+        <Style x:Key="TsunagiGothic" TargetType="Label">
+            <Setter Property="FontFamily" Value="TsunagiGothic.ttf#TsunagiGothic.ttf" />
+        </Style>
+
+        <ResourceDictionary>
+            <Color x:Key="Primary">#101E2D</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="#E5EDF5" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

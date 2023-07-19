@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MidTermProjectITE434.CreditPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <WebView Source="https://jeducation.com/main/%E0%B8%84%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%B4-n5-kanji/" />
+</ContentPage>
